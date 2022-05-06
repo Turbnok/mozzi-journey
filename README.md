@@ -14,9 +14,9 @@ Two buttons, two potentiometers, four LEDs, one speaker (or jack output)
 Todo
 ### How to proceed with this repository
 Todo
-### Arduino Scheme
+### Arduino Circuit
 
-![Arduino Scheme](documentation/arduino_schema.png)
+![Arduino Circuit](documentation/arduino_schema.png)
 
 ## Todos
 
@@ -24,7 +24,7 @@ Todo
 
  - [ ] Working with VScode
  - [ ] How to proceed with this repository
- - [x] Arduino Schema
+ - [x] Arduino Circuit
 
 #### Code
 
@@ -32,11 +32,13 @@ Todo
  - [x] Work with Code
  - [x] Serial Terminal in VScode
  - [x] Buttons
- - [x] 4 Led display 
+ - [x] 4 Leds display 
  - [ ] Potentiometers
  - [ ] Hello Mozzi (first Oscillator)
- - [ ] Button Menu
+ - [x] Button Menu
+ - [ ] Menu Library (Button Menu example in a library)
  - [ ] Tracker
+ - [ ] BPM
 
 #### Sound
 
