@@ -13,17 +13,17 @@ Button::Button(int pin)
 
 void Button::release()
 {
-    // don't trigger release if long press
-    if (!longState)
-    {
+    if(_release){
         _release();
-    }
-
+    }  
     longState = false;
 }
 void Button::press()
 {
     longTime = millis();
+    if(_press){
+       _press();
+    }
 }
 void Button::longpress()
 {
@@ -33,6 +33,10 @@ void Button::longpress()
 void Button::onRelease(void (*callback)())
 {
     _release = callback;
+}
+void Button::onPress(void (*callback)())
+{
+    _press = callback;
 }
 void Button::update()
 {

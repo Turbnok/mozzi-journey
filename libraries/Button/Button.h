@@ -1,5 +1,7 @@
 /*
   Button.h - Library for button.
+    05_menu 
+      add press
 */
 #ifndef Button_h
 #define Button_h
@@ -9,12 +11,16 @@ class Button
   public:
     Button(int);
     void update();  
-    void onRelease(void (*callback)());
+    void onRelease(void (*releaseCallback)());
+    void onPress(void (*pressCallback)());
   private:
     void press();
     void release();
     void longpress();
+
+    void (*_press)();
     void (*_release)();
+    
     int _pin;
     int previousState = 0;
     int currentState = 0;
