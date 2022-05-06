@@ -4,9 +4,7 @@
 **/
 #define NB_LEDS 4 // we have 4 leds
 
-//const uint8_t ledPins[4] = {3, 11, 5, 6}; // analog pins
-
-#include "FourLeds.h"
+#include <FourLeds.h>
 #include <Button.h>
 
 int count = 0;
@@ -18,7 +16,6 @@ void setup() {
   Serial.begin(115200);
   button0.onRelease(&release0);
   button1.onRelease(&release1);
-
   
   fourleds.setValue(0);
 }
