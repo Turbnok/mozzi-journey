@@ -15,11 +15,6 @@ void setup() {
   Serial.begin(115200);
   button0.onRelease(&release0);
   button1.onRelease(&release1);
-
-   for (int i = 0; i < 4; i++)
-  {
-    pinMode(ledPins[i], OUTPUT);
-  }
 }
 void release0(){
   Serial.println(">RELEASE 0");
