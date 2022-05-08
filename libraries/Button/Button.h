@@ -9,7 +9,7 @@
 class Button
 {
   public:
-    Button(int);
+    Button(int pin);
     void update();  
     void onRelease(void (*releaseCallback)());
     void onPress(void (*pressCallback)());
