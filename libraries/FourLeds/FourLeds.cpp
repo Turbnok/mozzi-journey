@@ -7,12 +7,12 @@
 
 FourLeds::FourLeds(int pin0, int pin1, int pin2, int pin3)
 {
-     _pins[0] = pin0;
-     _pins[1] = pin1;
-     _pins[2] = pin2;
-     _pins[3] = pin3;
-     
-     for (int i = 0; i < 4; i++)
+    _pins[0] = pin0;
+    _pins[1] = pin1;
+    _pins[2] = pin2;
+    _pins[3] = pin3;
+    
+    for (int i = 0; i < 4; i++)
     {
       pinMode(_pins[i], OUTPUT);
     }
