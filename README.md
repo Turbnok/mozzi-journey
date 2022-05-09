@@ -36,13 +36,14 @@ Todo
  - [ ] Potentiometers
  - [ ] Hello Mozzi (first Oscillator)
  - [x] Button Menu
- - [ ] Menu Library (Button Menu example in a library)
+ - [x] Menu Library (Button Menu example in a library)
  - [ ] Tracker
  - [ ] BPM
 
 #### Sound
 
  - [ ] Wave forms
+ - [ ] Duty cycle
  - [ ] Envelope
  - [ ] Notes
  - [ ] Vibrato
