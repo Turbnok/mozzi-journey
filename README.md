@@ -25,7 +25,8 @@ Todo
  - [ ] Working with VScode
  - [ ] How to proceed with this repository
  - [x] Arduino Circuit
-
+ - [ ] Update circuit with (270Ω resistor and 100nF capacitor)
+  
 #### Code
 
  - [x] HelloWorld
@@ -33,10 +34,11 @@ Todo
  - [x] Serial Terminal in VScode
  - [x] Buttons
  - [x] 4 Leds display 
- - [ ] Potentiometers
- - [ ] Hello Mozzi (first Oscillator)
  - [x] Button Menu
  - [x] Menu Library (Button Menu example in a library)
+ - [x] Potentiometers
+
+ - [x] Hello Mozzi (first Oscillator)
  - [ ] Tracker
  - [ ] BPM
 
