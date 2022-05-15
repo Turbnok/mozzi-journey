@@ -37,25 +37,26 @@ Todo
  - [x] Button Menu
  - [x] Menu Library (Button Menu example in a library)
  - [x] Potentiometers
-
  - [x] Hello Mozzi (first Oscillator)
  - [ ] Tracker
  - [ ] BPM
 
 #### Sound
 
- - [ ] Wave forms
+ - [x] Wave forms
  - [ ] Duty cycle
- - [ ] Envelope
+ - [x] Envelope
  - [ ] Notes
  - [ ] Vibrato
  - [ ] Low pass filter
- - [ ] NES noise drumkit like
+ - [x] NES noise drumkit like
  - [ ] Slide notes
  - [ ] Flanger
 
 #### Hardware
 
+ - [ ] SD card / save
+ - [ ] microphone / sampling
  - [ ] Velostat controller (https://www.youtube.com/watch?v=zUN2ZYdYAUo, https://www.youtube.com/watch?v=jzylmjtmIkI )
  - [ ] Midi in / out
  - [ ] Rotary ( no intent )
