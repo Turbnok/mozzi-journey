@@ -38,20 +38,22 @@ Todo
  - [x] Menu Library (Button Menu example in a library)
  - [x] Potentiometers
  - [x] Hello Mozzi (first Oscillator)
- - [ ] Tracker
+ - [x] Sequencer
  - [ ] BPM
+ - [ ] Main Volume
 
 #### Sound
 
  - [x] Wave forms
  - [ ] Duty cycle
  - [x] Envelope
- - [ ] Notes
- - [ ] Vibrato
- - [ ] Low pass filter
+ - [x] Notes
+ - [x] Vibrato
+ - [x] Low pass filter
  - [x] NES noise drumkit like
- - [ ] Slide notes
+ - [x] Slide notes
  - [ ] Flanger
+ - [x] Mix 4 sounds
 
 #### Hardware
 

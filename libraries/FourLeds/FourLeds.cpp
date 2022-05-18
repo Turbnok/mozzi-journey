@@ -18,7 +18,7 @@ FourLeds::FourLeds(int pin0, int pin1, int pin2, int pin3)
     }
 }
 
-void FourLeds::setValue(int value, bool clear, int delay){
+void FourLeds::setValue(uint8_t value, bool clear, int delay){
   _value = value;
   _time = millis();
   _delay = delay;

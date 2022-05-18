@@ -2,16 +2,18 @@
   Menu.cpp - Library for Menu
   with 2 buttons and 4 leds 
 */
-
 #include "Menu.h"
 #include "Arduino.h"
 #include "FourLeds.h"
 #define MAIN_MENUS 4 // we've got 4 main menus
 
-Menu::Menu(int menu[4], FourLeds *fourleds)
+Menu::Menu(uint8_t menu[4], FourLeds *fourleds)
 {
   _menus = menu;
   _fourleds = fourleds;
+  mainMenu = 0;
+  subMenu = 0;
+  
   _button0.onRelease(this, callback, RELEASE0);
   _button0.onPress(this, callback, PRESS0);
   _button1.onPress(this, callback, PRESS1);
@@ -42,7 +44,7 @@ void Menu::release0()
 {
   Serial.println("Release 0");
   // on release wait half a second before setting the submenu value
-  _fourleds->setValue(_subMenu + 1, false, 500);
+  _fourleds->setValue(subMenu + 1, false, 500);
 }
 void Menu::press0()
 {
@@ -58,24 +60,24 @@ void Menu::press1()
 
 void Menu::nextSubMenu()
 {
-  _subMenu++;
+  subMenu++;
 
-  if (_subMenu == _menus[_mainMenu])
+  if (subMenu == _menus[mainMenu])
   {
-    _subMenu = 0;
+    subMenu = 0;
   }
-  _fourleds->setValue(_subMenu + 1);
+  _fourleds->setValue(subMenu + 1);
 }
 
 void Menu::nextMainMenu()
 {
-  _mainMenu++;
-  _subMenu = 0;
-  if (_mainMenu == MAIN_MENUS)
+  mainMenu++;
+  subMenu = 0;
+  if (mainMenu == MAIN_MENUS)
   {
-    _mainMenu = 0;
+    mainMenu = 0;
   }
-  _fourleds->setValue(_mainMenu + 1, true); // the second parameter clear the leds before setting the value
+  _fourleds->setValue(mainMenu + 1, true); // the second parameter clear the leds before setting the value
 }
 
 void Menu::update(long elapsed)

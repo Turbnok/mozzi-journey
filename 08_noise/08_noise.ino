@@ -14,8 +14,7 @@ Noise sketch
 #define CONTROL_RATE 64
 
 Oscil<SAW2048_NUM_CELLS, CONTROL_RATE> osc0(SQUARE_NO_ALIAS_2048_DATA);
-
-ADSR<CONTROL_RATE, AUDIO_RATE> envelope; // notre enveloppe
+ADSR<CONTROL_RATE, AUDIO_RATE> envelope;
 Pot pot0 = Pot(A0);
 Pot pot1 = Pot(A1);
 
@@ -55,7 +54,6 @@ void updateControl()
     {
         _pot0 = pot0.getValue()/4;        
         maxstep = _pot0;
-      
     }
     if (pot1.hasChanged())
     {
